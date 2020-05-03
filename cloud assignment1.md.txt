@@ -1,0 +1,9 @@
+#**What is cloud?**
+Cloud is like a place where the resources can be used on-demand. The resources are taken on rent in pay as you go type. We can access our files on cloud from any laptop or desktop.
+
+##**Advantages of cloud**:
+1. The storage capacity of cloud is large.
+2. It is faster to access.
+3. We can access the services even at remote places using cloud.
+4. It reduces the need of physical hardware so also saves money.
+5. Restoring and getting back-up of data is easy.
