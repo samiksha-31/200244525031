@@ -12,6 +12,7 @@ It can be done in two ways:
 
 **Steps to create IAM roles** :-
 1. Open AWS console and from Services select *IAM*.
+
 ![Step2](https://user-images.githubusercontent.com/63635471/81144274-5528f980-8f91-11ea-8d6f-9c26acc38bd8.png)
 
 2. Select *Roles* and then *Create roles*.
