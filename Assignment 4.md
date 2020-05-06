@@ -11,22 +11,20 @@ It can be done in two ways:
 * Multiple IAM roles cannot be attached to a single instance, but a single IAM role can be attached to multiple instances.
 
 **Steps to create IAM roles** :-
-1. Open AWS console and select *Services*.
-
-2. From Services select *IAM*.
+1. Open AWS console and from Services select *IAM*.
 ![Step2](https://user-images.githubusercontent.com/63635471/81144274-5528f980-8f91-11ea-8d6f-9c26acc38bd8.png)
 
-3. Select *Roles* and then *Create roles*.
+2. Select *Roles* and then *Create roles*.
 
-4. Choose use case as *EC2* and click on *Next:Permissions*.
+3. Choose use case as *EC2* and click on *Next:Permissions*.
 
-5. Select the policy name *AmazonS3FullAccess* and click on *Next:Tags*.
+4. Select the policy name *AmazonS3FullAccess* and click on *Next:Tags*.
 
-6. Enter the *Key* and *Value* and click on *Next:Review*.
+5. Enter the *Key* and *Value* and click on *Next:Review*.
 
-7. Enter the *Role name* and if required the role description. Click on *Create role*.
+6. Enter the *Role name* and if required the role description. Click on *Create role*.
 
-8. Role is created.
+7. Role is created.
 
 
 **Steps to attach IAM role to EC2** :-
