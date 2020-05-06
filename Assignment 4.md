@@ -12,20 +12,33 @@ It can be done in two ways:
 
 **Steps to create IAM roles** :-
 1. Open AWS console and select *Services*.
+
 2. From Services select *IAM*.
+![Step2](https://user-images.githubusercontent.com/63635471/81144274-5528f980-8f91-11ea-8d6f-9c26acc38bd8.png)
+
 3. Select *Roles* and then *Create roles*.
+
 4. Choose use case as *EC2* and click on *Next:Permissions*.
+
 5. Select the policy name *AmazonS3FullAccess* and click on *Next:Tags*.
+
 6. Enter the *Key* and *Value* and click on *Next:Review*.
+
 7. Enter the *Role name* and if required the role description. Click on *Create role*.
+
 8. Role is created.
+
 
 **Steps to attach IAM role to EC2** :-
 1. From Services select *EC2*.
 2. Select the instance and click on *Actions*.
+
 3. Go to *Instance settings* and select *Attach/Rename IAM role*.
+
 4. From the dropdown select the IAM role created and click on *Apply*.
+
 5. Role is attached to the instance.
+
 
 **Commands to run on MobaXterm** :-
 aws s3 ls *(bucket name)*
