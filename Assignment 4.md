@@ -10,7 +10,8 @@ It can be done in two ways:
 * IAM roles are used to provide permissions to access the services.
 * Multiple IAM roles cannot be attached to a single instance, but a single IAM role can be attached to multiple instances.
 
-**Steps to create IAM roles** :-
+## Steps to create IAM roles :-
+
 **1. Open AWS console and from Services select *IAM*.**
 
 ![Step2](https://user-images.githubusercontent.com/63635471/81144274-5528f980-8f91-11ea-8d6f-9c26acc38bd8.png)
@@ -40,7 +41,9 @@ It can be done in two ways:
 ![Step8](https://user-images.githubusercontent.com/63635471/81144326-696cf680-8f91-11ea-923f-4e699c2ee896.PNG)
 
 
-**Steps to attach IAM role to EC2** :-
+
+## Steps to attach IAM role to EC2 :-
+
 **1. From Services select *EC2*.**
 
 **2. Select the instance and click on *Actions*.**
@@ -58,6 +61,7 @@ It can be done in two ways:
 **5. Role is attached to the instance.**
 
 ![Step 2 5](https://user-images.githubusercontent.com/63635471/81144273-53f7cc80-8f91-11ea-9e54-f419b3f0d863.PNG)
+
 
 **Commands to run on MobaXterm** :-
 aws s3 ls *(bucket name)*
