@@ -17,15 +17,27 @@ It can be done in two ways:
 
 2. Select *Roles* and then *Create roles*.
 
+![Step3](https://user-images.githubusercontent.com/63635471/81144275-565a2680-8f91-11ea-8b62-49db1747c249.png)
+
 3. Choose use case as *EC2* and click on *Next:Permissions*.
+
+![Step4](https://user-images.githubusercontent.com/63635471/81144283-58bc8080-8f91-11ea-9518-fec67f24ed81.PNG)
 
 4. Select the policy name *AmazonS3FullAccess* and click on *Next:Tags*.
 
+![Step5](https://user-images.githubusercontent.com/63635471/81144302-6114bb80-8f91-11ea-9794-9ebc00aa3655.PNG)
+
 5. Enter the *Key* and *Value* and click on *Next:Review*.
+
+![Step6](https://user-images.githubusercontent.com/63635471/81144311-63771580-8f91-11ea-8e65-fed325600f77.PNG)
 
 6. Enter the *Role name* and if required the role description. Click on *Create role*.
 
+![Step7](https://user-images.githubusercontent.com/63635471/81144318-670a9c80-8f91-11ea-9f32-c044b218c928.PNG)
+
 7. Role is created.
+
+![Step8](https://user-images.githubusercontent.com/63635471/81144326-696cf680-8f91-11ea-923f-4e699c2ee896.PNG)
 
 
 **Steps to attach IAM role to EC2** :-
