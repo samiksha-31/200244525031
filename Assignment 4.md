@@ -15,7 +15,7 @@ It can be done in two ways:
 
 ![Step2](https://user-images.githubusercontent.com/63635471/81144274-5528f980-8f91-11ea-8d6f-9c26acc38bd8.png)
 
-2. Select *Roles* and then *Create roles*.
+2. Select *Roles* and then *Create role*.
 
 ![Step3](https://user-images.githubusercontent.com/63635471/81144275-565a2680-8f91-11ea-8b62-49db1747c249.png)
 
@@ -47,7 +47,7 @@ It can be done in two ways:
 
 ![Step 2 2](https://user-images.githubusercontent.com/63635471/81144251-4c382800-8f91-11ea-91fc-77cb8015a532.PNG)
 
-3. Go to *Instance settings* and select *Attach/Rename IAM role*.
+3. Go to *Instance settings* and select *Attach/Replace IAM role*.
 
 ![Step 2 3](https://user-images.githubusercontent.com/63635471/81144263-50644580-8f91-11ea-9863-4ab42cd9d45e.png)
 
