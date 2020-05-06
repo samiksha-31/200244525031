@@ -42,14 +42,22 @@ It can be done in two ways:
 
 **Steps to attach IAM role to EC2** :-
 1. From Services select *EC2*.
+
 2. Select the instance and click on *Actions*.
+
+![Step 2 2](https://user-images.githubusercontent.com/63635471/81144251-4c382800-8f91-11ea-91fc-77cb8015a532.PNG)
 
 3. Go to *Instance settings* and select *Attach/Rename IAM role*.
 
+![Step 2 3](https://user-images.githubusercontent.com/63635471/81144263-50644580-8f91-11ea-9863-4ab42cd9d45e.png)
+
 4. From the dropdown select the IAM role created and click on *Apply*.
+
+![Step 2 4](https://user-images.githubusercontent.com/63635471/81144268-52c69f80-8f91-11ea-9968-38c075caf1b3.PNG)
 
 5. Role is attached to the instance.
 
+![Step 2 5](https://user-images.githubusercontent.com/63635471/81144273-53f7cc80-8f91-11ea-9e54-f419b3f0d863.PNG)
 
 **Commands to run on MobaXterm** :-
 aws s3 ls *(bucket name)*
