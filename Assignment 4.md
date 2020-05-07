@@ -88,7 +88,7 @@ It can be done in two ways:
 
 ![3 6](https://user-images.githubusercontent.com/63635471/81261629-08f5bc00-905a-11ea-9d70-002854f6788e.PNG)
 
-* *history* : Displaysall the commands used till now
+* *history* : Displays all the commands used till now
 
 ![3 7](https://user-images.githubusercontent.com/63635471/81261637-0bf0ac80-905a-11ea-95c9-66951d6a044c.PNG)
 
