@@ -63,5 +63,39 @@ It can be done in two ways:
 ![Step 2 5](https://user-images.githubusercontent.com/63635471/81144273-53f7cc80-8f91-11ea-9e54-f419b3f0d863.PNG)
 
 
-**Commands to run on MobaXterm** :-
-aws s3 ls *(bucket name)*
+## Commands to run on MobaXterm :-
+* *aws s3 ls* : Displays the bucket name
+
+
+
+* *ls -r* : Displays the folders
+
+
+
+* *aws s3 ls --recursive* : recursively lists all contents of the bucket
+
+
+
+* *mv source_folder destination_folder* : moves the file from source to destination folder
+
+
+
+* *ls -a* : Displays all files including the hidden files
+
+
+
+* *ls -l* : Displays the detailed information of the files
+
+
+
+* *history* : Displaysall the commands used till now
+
+
+
+* *Ctrl + R* : Search any command by its initials
+
+
+
+* Python is preinstalled in Linux. So we can directly use python commands.
+
+
