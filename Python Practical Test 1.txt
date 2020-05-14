@@ -1,0 +1,65 @@
+#Q.1
+
+x=int(input("Enter a number:"))
+count=0
+while x!=0:
+    x=x//10
+    count+=1
+print("Count is:",count)
+
+list1=[]
+n=int(input("enter the value of n:"))
+for i in range(n):
+    l=int(input())
+    list1.append(l)
+print("List1 =",list1)
+for i in range(len(list1)-1,-1,-1):
+    print(list1[i])
+
+
+#Q.2
+
+s1=str(input("Enter the 1st string:"))
+s2=str(input("Enter the 2nd string:"))
+print("s1 =",s1)
+print("s2 =",s2)
+x=int(len(s1)/2)
+appendedstring=s1[:x-1] + s2 + s1[x-1:]
+print(appendedstring)
+
+
+#Q.3
+
+Str=str(input("Enter the string:"))
+alphabets=Str.split()
+lowercase=[]
+uppercase=[]
+for char in Str:
+    if char.islower():
+        lowercase.append(char)
+    else:
+        uppercase.append(char)
+ArrangedString=''.join(lowercase + uppercase)
+print("Arranging characters giving precedence to lowercase letters:\n",ArrangedString)
+
+
+#Q.5
+
+listOne=[]
+n=int(input("enter the value of n:"))
+for i in range(n):
+    l=int(input())
+    listOne.append(l)
+
+listTwo=[]
+m=int(input("enter the value of m:"))
+for j in range(m):
+    p=int(input())
+    listTwo.append(p)
+
+print("listOne =",listOne)
+print("listTwo =",listTwo)
+print("Element at odd-index positions from list one:\n",listOne[1::2])
+print("Element at even-index positions from list two:\n",listTwo[::2])
+print("Printing Final third list:\n",listOne[1::2] + listTwo[::2])
+
