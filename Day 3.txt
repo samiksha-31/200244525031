@@ -1,0 +1,63 @@
+Q1.
+my_list1=[]
+my_list2=[]
+n=int(input("enter the value of n:"))
+for i in range(n):
+    l=int(input())
+    my_list1.append(l)
+    k=l*l
+    my_list2.append(k)
+print("List =",my_list1)
+print("New List =",my_list2)
+
+
+Q2.
+my_list=[1,2.0,'hey',3.6,8,'hii','bye',67,98.3]
+l1=[]
+l2=[]
+l3=[]
+for i in my_list:
+    if type(i)==int:
+        l1.append(i)
+    elif type(i)==float:
+        l2.append(i)
+    elif type(i)==str:
+        l3.append(i)
+print("Input List:",my_list)
+print("Integer list:",l1)
+print("Float List:",l2)
+print("String list:",l3)
+
+
+Q3.
+n=int(input("Enter number:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j, end="")
+    print()
+
+
+Q4.
+>>>import numpy as np
+>>>a=np.array([[[1,2,3],[4,5,6],[7,8,9]]])
+>>>b=np.array([[[3,2,1],[6,5,4],[9,8,7]]])
+>>>c=a+b
+>>>c
+
+
+Q5.
+square=1
+res=0
+t=int(input("Enter a number:"))
+power=len(str(t))
+no=t
+while no>0:
+    x=no%10
+    square=x**power
+    no=no//10
+    res+=square
+print(res)
+if res==t:
+    print("Number is narcissistic number")
+else:
+    print("Number is not a narcissistic number")
