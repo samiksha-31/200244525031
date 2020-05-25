@@ -1,0 +1,58 @@
+Q1.
+no1=int(input("Enter 1st number:"))
+no2=int(input("Enter 2nd number:"))
+no3=int(input("Enter 3rd number:"))
+def max(no1, no2, no3):
+    if (no1>no2 and no1>no3):
+        return no1
+    elif (no2>no1 and no2>no3):
+        return no2
+    else:
+        return no3
+print("Max is:",max(no1,no2,no3))
+
+
+Q3.
+i=int(input("Enter number:"))
+def sum_num(i):
+    if i<=0:
+        return i
+    else:
+        return i + sum_num(i-1)
+print("Sum is:", sum_num(i))
+
+
+Q4.
+def showStudent(name,stud_id='1',college='VITA'):
+    print("Student info: Id =",stud_id,"Name =",name,"College name =",college)
+showStudent('Samiksha','31','RAIT')
+showStudent('Sam')
+
+
+Q5.
+my_list=[]
+new_list=[]
+n=int(input("Enter value of n:"))
+for i in range(n):
+    l=int(input())
+    my_list.append(l)
+print("List:",my_list)
+def unique_element_list(my_list):
+    for i in my_list:
+        if i not in new_list:
+            new_list.append(i)
+    return new_list
+print("Unique element list:",unique_element_list(my_list))
+
+
+Q6.
+no=int(input("Enter the number:"))
+def first_digit(no):
+    first=no
+    while first>=10:
+        first=first//10
+    return first
+def last_digit(no):
+    last=no%10
+    return last
+print("Sum of first and last digit is:", first_digit(no)+last_digit(no))
