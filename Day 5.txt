@@ -1,0 +1,75 @@
+Q1.
+my_list=[]
+n=int(input("Enter the value of n:"))
+for x in range(n):
+    l=int(input())
+    my_list.append(l)
+print("Original list:",my_list)
+for i in range(len(my_list)-1):
+    for j in range(len(my_list)-1-i):
+        if my_list[j]>my_list[j+1]:
+            t=my_list[j]
+            my_list[j]=my_list[j+1]
+            my_list[j+1]=t
+print("Sorted list:",my_list)
+
+
+Q2.
+my_list=[]
+n=int(input("Enter the value of n:"))
+for i in range(n):
+    l=int(input())
+    my_list.append(l)
+no=int(input("Enter the number to be searched:"))
+print("List:",my_list)
+for j in range(len(my_list)):
+    if my_list[j]==no:
+        print("Number found")
+if no not in my_list:
+    print("Number not found")
+
+
+Q3.
+my_list=[]
+n=int(input("Enter the value of n:"))
+for i in range(n):
+    l=int(input())
+    my_list.append(l)
+no=int(input("Enter the number to be searched:"))
+my_list.sort()
+print("List:",my_list)
+lower=0
+upper=len(my_list)-1
+flag=0
+while lower<=upper:
+    mid=(lower+upper)//2
+    if no>my_list[mid]:
+        lower=mid+1
+    elif no<my_list[mid]:
+        upper=mid-1
+    else:
+        flag=1
+        break
+if flag==1:
+    print("Number found")
+else:
+    print("Number not found")
+
+
+Q4.
+list1=[]
+list2=[]
+concat_list=[]
+n=int(input("Enter the value of n:"))
+for i in range(n):
+    l1=str(input())
+    list1.append(l1)
+for i in range(n):
+    l2=str(input())
+    list2.append(l2)
+print("List1 =",list1)
+print("List2 =",list2)
+for j in range(n):
+    c=list1[j]+list2[j]
+    concat_list.append(c)
+print("Concatenated list =",concat_list)
