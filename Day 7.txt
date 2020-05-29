@@ -1,0 +1,82 @@
+Q1.
+class BankOperations:
+    name = "VITA"
+    def __init__(self):
+        self.balance=0
+        print("Welcome to bank", BankOperations.name,"!!")
+
+    def deposit(self):
+        amt=int(input("Enter amount to be deposited:"))
+        self.balance+=amt
+        print("Amount deposited:",amt)
+
+    def withdraw(self):
+        amt=int(input("Enter amount to be withdrawn:"))
+        if self.balance>amt:
+            self.balance-=amt
+            print("Amount withdrawn:",amt)
+        else:
+            print("Insufficient balance")
+
+    def end(self):
+        print("Balance:",self.balance)
+        print("Thank you!")
+
+newAccount=BankOperations()
+newAccount.deposit()
+newAccount.withdraw()
+newAccount.end()
+
+
+Q2.
+class Circle:
+    def __init__(self,r):
+        self.radius = r
+
+    def area(self):
+        return 3.14*self.radius*self.radius
+
+    def perimeter(self):
+        return 2*3.14*self.radius
+
+c=Circle(8)
+print("Area:",c.area())
+print("Perimeter:",c.perimeter())
+
+
+Q3.
+class Shape:
+    def __init__(self):
+        pass
+    
+    def area(self):
+        return 0
+
+class Square(Shape):
+    def __init__(self,l):
+        Shape.__init__(self)
+        self.length = l
+
+    def area(self):
+        return self.length*self.length
+
+newSquare=Square(4)
+print("Area of square is:",newSquare.area())
+
+
+Q4.
+class MyClass:
+    count_var=0
+    
+    def __init__(self,x):
+        self.number = x
+        MyClass.count_var+=1
+
+m1=MyClass(5)
+m2=MyClass(43)
+m3=MyClass(14)
+m4=MyClass(21)
+m5=MyClass(36)
+
+print("Number of reference variables:",MyClass.count_var)
+
