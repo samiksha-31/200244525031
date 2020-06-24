@@ -8,7 +8,7 @@
 ![img2](https://user-images.githubusercontent.com/63635471/85609270-8a89c380-b673-11ea-8a86-ba702ef0961d.PNG)
 
 
-3. Create a Directory in HDFS
+3. Create a Directory in HDFS:
 
 ![img3](https://user-images.githubusercontent.com/63635471/85609272-8b225a00-b673-11ea-93d1-d8c424b5fa78.PNG)
 
