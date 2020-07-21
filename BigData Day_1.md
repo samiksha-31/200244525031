@@ -48,7 +48,7 @@
 ![img10](https://user-images.githubusercontent.com/63635471/85609296-8e1d4a80-b673-11ea-968a-d870573cc042.PNG)
 
 
-11. Delete the file from the old folder:
+11. Deleting the copied the file:
 
 ![img11](https://user-images.githubusercontent.com/63635471/85609299-8eb5e100-b673-11ea-97d1-0626e1523179.PNG)
 
