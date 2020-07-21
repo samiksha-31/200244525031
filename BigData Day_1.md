@@ -38,12 +38,12 @@
 ![img8](https://user-images.githubusercontent.com/63635471/85609291-8d84b400-b673-11ea-9def-62fa60d2672f.PNG)
 
 
-9. Transfer a file into another folder and view the contents of that folder:
+9. Transfer the file into hdfs and verify:
 
 ![img9](https://user-images.githubusercontent.com/63635471/85609294-8e1d4a80-b673-11ea-81de-c5e32dbf4323.PNG)
 
 
-10. Copy a File in HDFS and verify that file exists in both the folders:
+10. Copy a File into another folder in HDFS and verify that file exists in both the folders:
 
 ![img10](https://user-images.githubusercontent.com/63635471/85609296-8e1d4a80-b673-11ea-968a-d870573cc042.PNG)
 
