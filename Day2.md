@@ -1,6 +1,6 @@
-##**Sqoop Commands**
+## **Sqoop Commands**
 
-#*Importing RDBMS Data into HDFS*
+# *Importing RDBMS Data into HDFS*
 
 1. Create table and import data in RDBMS:
 
@@ -80,7 +80,7 @@
 
 
 
-##*Exporting HDFS Data to an RDBMS*
+## *Exporting HDFS Data to an RDBMS*
 
 1. Create the table salaries2 in database:
 
