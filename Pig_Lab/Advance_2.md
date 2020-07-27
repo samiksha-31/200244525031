@@ -8,6 +8,7 @@ Change directories to the Preparing Data for Hive lab folder. View the contents 
 
 ## 2. Store the Projection in the Hive Warehouse
 Open wh_visits.pig. Add the following command at the bottom of the file, which stores the project_potus relation into a very specific folder in the Hive warehouse:
+
 STORE project_potus INTO '/apps/hive/warehouse/wh_visits/';
 
 ![2](https://user-images.githubusercontent.com/63635471/88564532-f2577380-d050-11ea-8b6e-0952fa72e7b3.PNG)
@@ -15,6 +16,7 @@ STORE project_potus INTO '/apps/hive/warehouse/wh_visits/';
 
 ## 3. Run the Pig Script
 Save your changes to wh_visits.pig. Run the script from the command line:
+
 pig wh_visits.pig
 
 ![3](https://user-images.githubusercontent.com/63635471/88564534-f388a080-d050-11ea-9d31-b98d4972d74a.PNG)
