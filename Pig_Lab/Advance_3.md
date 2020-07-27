@@ -45,6 +45,7 @@ Open the file sessions.pig and save the following commands:
 
 
 ## 5. Compute the Median Session Length
+For computing the median add the following commands to the existing nested FOREACH statement in the sessiontimes_avg definition:
 
 DEFINE Median datafu.pig.stats.Median();
 
