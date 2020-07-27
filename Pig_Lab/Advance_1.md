@@ -16,15 +16,18 @@ Use the hdfs dfs -ls command to verify that the congress.txt file is in whitehou
 a. Enter the script in a text file.
 
 b. At the top of the file, add a comment:
+
 --join.pig: joins congress.txt and visits.txt
 
 ## 4. Load the White House Visitors
 Define the following visitors relations, which will contain the first and last names of all White House visitors:
+
 visitors = LOAD 'whitehouse/visits.txt' USING PigStorage(',') AS (lname:chararray, fname:chararray);
 That is the only data we are going to use from visits.txt.
 
 ## 5. Define a Projection of the Congress Data
 a. Add the following load command that loads the ‘congress.txt’ file into a relation named congress. The data is tab-delimited, so no special Pig loader is needed:
+
 congress = LOAD 'whitehouse/congress.txt' AS (
 full_title:chararray,
 district:chararray,
@@ -36,6 +39,7 @@ party:chararray
 
 b. The names in visits.txt are all uppercase, but the names in congress.txt are not.
 Define a projection of the congress relation that consists of the following fields:
+
 congress_data = FOREACH congress GENERATE
 district,
 UPPER(lname) AS lname,
@@ -88,6 +92,7 @@ a. Delete the joinresult directory in HDFS:
 ![9](https://user-images.githubusercontent.com/63635471/88557082-6856dd00-d047-11ea-8a7c-f201b4866c1a.PNG)
 
 b. Modify your JOIN statement in join.pig so that is uses replication. It should look like this:
+
 join_contact_congress = JOIN visitors BY (lname,fname),
 congress_data BY (lname,fname) USING 'replicated';
 
@@ -107,11 +112,13 @@ d. Notice this time that the statistics output shows Pig used a “REPLICATED_JO
 
 ## 10. Count the Results
 a. In join.pig, comment out the STORE command:
+
 --STORE join_contact_congress INTO 'joinresult';
 
 b. Notice in the output of your join.pig script that we know which party the visitor belongs to: Democrat, Republican, or Independent. Using the join_contact_congress:
 
 c. Name the relation counters and use the DUMP command to output the results:
+
 join_group = GROUP join_contact_congress
 BY congress_data::party;
 counters = FOREACH join_group GENERATE group,
@@ -119,6 +126,7 @@ COUNT(join_contact_congress);
 DUMP counters;
 
 d. At the end of join.pig, add the following statement:
+
 EXPLAIN counters;
 
 Final output:
