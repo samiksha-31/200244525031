@@ -25,4 +25,3 @@ The output will be the median values for the same five stocks:
 
 ![5](https://user-images.githubusercontent.com/63635471/88568006-e8843f00-d055-11ea-9041-4c7c4ee1d396.PNG)
 
-
