@@ -2,6 +2,7 @@
 
 ## 1. Review the Stock Market Data
 
+
 ![1](https://user-images.githubusercontent.com/63635471/88567998-e621e500-d055-11ea-88c7-1281390791ca.PNG)
 
 
