@@ -37,6 +37,7 @@ The output should be 50 tuples that represent the first 10 fields of visits:
 a. There are 26 fields in each record, and one of them represents the visitee (the person being visited in the White House). Your goal now is to locate this column and determine who has visited the President of the United States. Define a relation that is a projection of the last seven fields ($19 to $25) of visits. Use LIMIT to only output 500 records:
 
 ![8](https://user-images.githubusercontent.com/63635471/88555531-94715e80-d045-11ea-8c1c-86ba1ca28d56.PNG)
+
 ![9](https://user-images.githubusercontent.com/63635471/88555533-9509f500-d045-11ea-849a-7e6fb4037e64.PNG)
 
 b. Use FILTER to define a relation that only contains records of visits where field $19 matches POTUS. Limit the output to 500 records. The output should include only visitors who met with the President:
@@ -66,6 +67,10 @@ b. View the contents of the potus folder.
 Notice that there is a single output file, so the Pig job was executed with one reducer. View the contents of the output file using cat:
 
 ![16](https://user-images.githubusercontent.com/63635471/88555576-9c310300-d045-11ea-805b-442137767569.PNG)
+
 ![17](https://user-images.githubusercontent.com/63635471/88555579-9d623000-d045-11ea-8a54-99150584d1b7.PNG)
+
+
+
 
 
