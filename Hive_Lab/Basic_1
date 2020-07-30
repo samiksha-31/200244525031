@@ -1,0 +1,111 @@
+# Hive - Basic_1
+
+## 1. Review the Data
+a. Use the hdfs dfs -ls command to view the contents of the /apps/hive/warehouse/wh_visits/ folder in HDFS:
+
+
+
+
+## 2. Define a Hive Script
+a. In the /home/hadoop/labs/Lab7.1 folder, there is a text file named wh_visits.hive. View its contents.
+it defines a Hive table named wh_visits with the following schema that matches the data in your project_potus folder:
+
+
+
+b. Run the script
+
+
+
+
+## 3. Verify the Table Creation
+a. Start the Hive Shell:
+
+
+
+b. From the hive> prompt, enter the “show tables” command:
+
+
+
+c. Use the describe command to view the details of wh_visits:
+
+
+
+d. Try running a query (even though the table is empty):
+
+
+
+
+## 4. Count the Number of Rows in a Table
+Enter the following Hive query, which outputs the number of rows in wh_visits:
+
+
+
+
+## 5. Selecting the Input File Name
+Hive has two virtual columns that get created automatically for every table:
+INPUT__FILE__NAME and BLOCK__OFFSET__INSIDE__FILE.
+The result of this query is visitors to the White House whose last name starts with “Y.”
+
+
+
+
+## 6. Drop a Table
+a. Start by defining a simple table called names using the Hive Shell:
+
+
+
+b. Use the Hive dfs command to put Lab7.1/names.txt into the table’s whitehouse folder:
+
+
+
+c. Use the Hive dfs command to put Lab7.1/names.txt into the table’s whitehouse folder:
+
+
+
+d. From the Hive Shell, run the query:
+
+
+
+e. Now drop the names table:
+
+
+
+f. View the contents of the table’s warehouse folder again. Notice the names folder is gone.
+
+
+
+
+## 7. Define an External Table
+a. Start by putting names.txt into HDFS:
+
+
+
+b. Create a folder in HDFS for the external table to store its data in:
+
+
+
+c. Define the names table as external this time:
+
+
+
+d. Load data into the table:
+
+
+
+e. Verify that the load worked:
+
+
+
+f. Notice the names.txt file has been moved to /home/hadoop/hivedemo:
+
+
+
+g. Now drop the names table:
+
+
+
+h. View the contents of /home/hadoop/hivedemo. Notice that names.txt is still there:
+
+
+
+
